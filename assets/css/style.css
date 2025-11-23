@@ -17,10 +17,14 @@ body{
     /*Generic project styles*/
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
-    
-
 }
 
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
 
 /*Header*/
@@ -41,12 +45,6 @@ header a{
     color: inherit;
 }
 
-h1{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
 
 #menu{
     font-size: 110%;
@@ -98,7 +96,53 @@ main{
     height: 100vh;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
 }
+
+#cover-text{
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h1, #cover-text > h3 {
+    color: #ffffff;
+}
+
+/*Reasons section*/
+#reasons{
+    width: 90%;
+    margin:20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    font-size: 280%;
+    text-align: center;
+}
+
+#benefits-physical > div, #benefits-mental > div{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p{
+    padding:0 20px;
+    
+}
+
+hr{
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+
+
 
 /*Footer*/
 #social-networks{
@@ -149,6 +193,13 @@ main{
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
+
+    /*Hero*/
+    #cover-text{
+        width: 300px;
+        right: 50px;
+    }
+
 }
 
 /* Media query: laptops and larger (992px and up) */
